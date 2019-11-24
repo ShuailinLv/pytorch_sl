@@ -1,5 +1,5 @@
 import os
-# __all__ = ['GetAllFilesInRootFolder']
+__all__ = ['GetAllFilesInRootFolder']
 
 def GetAllFloders(data_path: str) -> None:
 		allFolders = []
@@ -30,5 +30,6 @@ def GetAllFilesInRootFolder(data_root: str) -> None:
 	for item in allLists:
 		for file in item:
 			allFiles.append(file)
+	list.sort(allFiles)
 	return allFiles
 
